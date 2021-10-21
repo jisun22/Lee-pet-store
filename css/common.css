@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* 초기화 */
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 * {
     margin: 0; padding: 0;
 }
@@ -11,38 +15,42 @@ ul { list-style: none; }
 body{
     margin: 0;
     font-family: 'PT Sans Narrow';
-   
 }
+
 html{font-size: 20px}
 body{
     font-size: 1rem;
     background-color: rgb(238, 231, 207);
 }
 /* 헤더 꾸미기 */
+.header {
+    display: flex;
+    position: absolute;
+    width: 1890px;
+    height: 100px;
+    left: 3px;
+    top: 220px;
+    background: #FAF0BF;
+}
+
+.icon_img {
+    position: absolute;
+    left: 280px;
+    top: -46px;
+
+}
+
 .main_text {
     position: absolute;
     width: 566px;
     height: 120px;
-    left: 449px;
+    left: 600px;
     top: 57px;
 }
 
-.icon_img{
-    position: absolute;
-    width: 132px;
-    height: 120px;
-    left: 104px;
-}
+.header_menu2 a
 
-.header {
-    position: absolute;
-    width: 1440px;
-    height: 126px;
-    left: 3px;
-    top: 200px;
 
-   background: #FAF0BF;
-}
 
 header > div {
     width: 54.5rem;
@@ -53,225 +61,85 @@ header > div:after {content:""; display: block; clear: both;}
 header > div h1 {
     float: left;
     padding: 22px 60px 24px;
-   
 }
-header > div h1 a{
-    color: coral}
 
 header > div nav{
     float: right;
-    padding: 3.4rem 0 0 0;
+    padding: 20.4rem 0 0 0;
 }
+
 header > div .header_menu1 {
     position: absolute;
-    right: 0;
+    right: 550px;
     top: 0;
-    padding: 2.6rem 0 3rem 3rem;
-}
-header > div .header_menu2 {
-    position: absolute;
-    right: 2.25rem;
-    top: 0.3rem;
-
+    padding: 1.6rem 0 8rem 20rem;
 }
 header > div nav > ul >li{
     float: left;
+
 }
 header > div nav > ul >li > a{
-    font-size: 1.4rem;
+    font-size: 1.0rem;
     color: rgb(82, 62, 37);
     display: block;
-    padding:0 1.25rem 0; height: 2.6rem;
+    padding:0 2.25rem 0; height: 2.6rem;
+    font-family: 'Patrick Hand', cursive;
 
 }
-
-header > div .header_menu2 li{
-    float: left;
-    padding: 0.5rem 2rem 0 0 ;
-    color: rgb(153, 99, 32);
-    font-size: 0.9rem;
-
-}
-header > div .header_menu2 li a{
-    color: rgb(153, 99, 32);
-    padding: 0 0.75rem;
-}
-header > div .header_menu2 li~li i:after {
-    content:""; 
-    position: absolute;
-    left:0;
-    top:50%;
-    width: 2px;
-    height: 0.6rem;
-    background: #dfdacb;
-    transform: translateY(-25%);
-
-}
-
-header > div .header_menu2 li:last-child i {
-    font-size: 1.2rem;
-    color: transparent;
-    width: 1.7rem;
-    height: 1.7rem;
-    text-align: center;
-    line-height: 1.7rem;
-    color: black;
+header > div .header_menu1 li a{
+    border:1px solid transparent; 
+     -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  }
+  
+  header > div .header_menu1 li a:hover {
+    background: rgb(236, 184, 72);
+    border-radius: 50%;
+   
     
 }
-header > div .header_menu2 li a:hover{
-    color: white;   
+.header_menu2 li a:hover {
+    
+    color: #f0c758;
+    
 }
-header > div .header_menu1 li a:hover{
-    background: rgb(241, 229, 214);
-    border-radius: 2px;
-}
-header > div .header_menu2 li:last-child a:after
-{display: none;
-}
-header > div .header_menu2 li:last-child a
-{
-    color: transparent;
-    width: 1.7rem;
-    height: 1.7rem;
-    text-align: center;
-    line-height: 1.7rem;
-    background: #faf0bf; border: 1px; 
-    display: block;
-    padding: 0;
-    border-radius: 0.25rem;
-}
-
-header > div .header_menu2 li:last-child i::before
-{
- 
-    font-family:'search';
-    font-size: 1.2rem;
-    color: #000;
-}
-header > div .header_menu2 i {
-    display: none;
-}
-header .total {display: none;}
-
-/* 텍스트 존 */
-
-
-/* 검색창 */
-.search_box{
-    margin: 0 auto;
-    width: 863px;
-    height: 81px;
-    left: 289px;
-    top: 803px;
-
-    background: #FFFFFF;
-    border: 6px solid #D88E20;
-    box-sizing: border-box;
+  
+.header_menu2 li a{
+    position: relative;
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #88705B;
+    float: right;
+    right: 30px;
+    top: 120px;
+    padding:0 1.25rem 0;
+    display:inline;
+    border-left: 1px solid #c0c0c0;
+    font-family: 'Patrick Hand', cursive;
 }
 
+.header_menu2:first-child {
 
-/* 첫번째 단락 */
-.section{
-    width:600px ;
-    margin: 0 auto;
-}
-.section > .click img{
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    font-size: 3rem;
-    text-align: center;
-    float: left;
-    margin:0 10px ;
-}
+    border-left: none;
+
+  }
 /* 푸터 꾸미기   */
-.container2{background-color: #3c3c3c;
+.footer{
+    background-color: #857d6d;  
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    left: 1px;
+    top: 8600px;
 }
-.img_part img{
-    color: white;
-}
-footer {
 
-    color: rgb(212, 205, 205);
-}
-footer p, a {
-font-size: 12px;
-font-family: 'Roboto', sans-serif;
-}
-footer h6 {
-font-family: 'Playfair Display', serif;
-margin-bottom: 40px;
-position: relative;
-}
-footer h6:after {
-position: absolute;
-content: "";
-background: grey;
-width: 12%;
-height: 1px;
-left: 0;
-bottom: -20px;
-}
-.btn-footer {
-         color: grey;
-      
-        text-decoration: none;
-        border: 1px solid;
-        border-radius: 43px;
-        font-size: 13px;
-        padding: 7px 30px;
-        line-height: 47px;
-}
-.btn-footer:hover {
-        
-        text-decoration: none;
-       
-}
-.form-footer input[type="text"] {
-border: none;
-border-radius: 16px 0 0 16px;
-outline: none;
-padding-left: 10px;
-
-}
-::placeholder {
-font-size: 10px;
-padding-left: 10px;
-font-style: italic;
-}
-.form-footer input[type="button"] {
-border: none;
-background:#232323;
-margin-left: -5px;
-color: #fff;
-outline: none;
-border-radius: 0 16px 16px 0;
-padding: 2px 12px;
-}
-.social .fa {
-color: grey;
-font-size: 22px;
-padding: 10px 15px;
-background: #3c3c3c;
-}
-footer ul li {
-list-style: none;
-display: block;
-}
-footer ul  {
-padding-left: 0;
-}
-footer ul  li a{
-text-decoration: none;
-color: grey;
-text-decoration:none;
-}
-a:hover {
-text-decoration: none;
-color: #f5f5f5 !important;
-
-}
-.logo-part {
-border-right: 1px solid grey;
-height: 100%;
+.footer_name{
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    left: 25px;
+    bottom: 429px;
 }
