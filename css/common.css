@@ -5,6 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic+Coding&family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic+Coding&family=Patrick+Hand&family=Source+Sans+Pro&display=swap');
 * {
     margin: 0; padding: 0;
 }
@@ -24,28 +27,29 @@ body{
 }
 /* 헤더 꾸미기 */
 .header {
+    position: fixed;
     display: flex;
     position: absolute;
     width: 1890px;
     height: 100px;
     left: 3px;
-    top: 220px;
+    top: 0px;
     background: #FAF0BF;
 }
 
-.icon_img {
+.icon_img a{
     position: absolute;
-    left: 280px;
+    left: 250px;
     top: -46px;
 
 }
 
-.main_text {
+.main_text a{
     position: absolute;
-    width: 566px;
-    height: 120px;
-    left: 600px;
-    top: 57px;
+    width: 239px;
+    height: 68px;
+    left: 369px;
+    top: 20px;
 }
 
 .header_menu2 a
@@ -105,8 +109,7 @@ header > div .header_menu1 li a{
 }
   
 .header_menu2 li a{
-    position: relative;
-    
+    position: absolute;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -114,7 +117,7 @@ header > div .header_menu1 li a{
     color: #88705B;
     float: right;
     right: 30px;
-    top: 120px;
+    top: -40px;
     padding:0 1.25rem 0;
     display:inline;
     border-left: 1px solid #c0c0c0;
@@ -131,7 +134,7 @@ header > div .header_menu1 li a{
     background-color: #857d6d;  
     position: absolute;
     width: 100%;
-    height: 500px;
+    height: 460px;
     left: 1px;
     top: 8600px;
 }
@@ -141,5 +144,46 @@ header > div .header_menu1 li a{
     width: 50px;
     height: 20px;
     left: 25px;
-    bottom: 429px;
+    bottom: 420px;
 }
+
+.footer_text a{
+    position: absolute;
+    float: left;
+    left: 31px;
+    top: 120px;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.address{
+    position: absolute;
+    float: left;
+    left: 31px;
+    top: 220px;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.sns{
+    position: absolute;
+    float: right;
+    right: 10px;   
+    bottom: 100px;
+}
+
+.select {
+    top: 420px;
+    width: 200px;
+    padding: .8em .5em;
+    font-family: inherit;
+    background: url('arrow.jpg') no-repeat 95% 50%;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
+    
