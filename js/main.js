@@ -7,6 +7,22 @@ ToggleBtn.addEventListener('click',() =>{
     icons.classList.ToggleBtn('active');
 });
 
+$(function() {
+    var lnb = $("#header").offset().top;
+    $(window).scroll(function() {
+        var window = $(this).scrollTop();
+
+        if(lnb <= window) {
+            $("#header").addClass("fixed");
+        } else {
+            $("#header").removeClass("fixed");
+        }
+    })
+});
+
+
+
+
 //best slide
 var slides =  document.querySelector('.slides')
     slides = document.querySelectorAll('.slides li'),
