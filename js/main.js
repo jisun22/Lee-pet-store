@@ -14,3 +14,10 @@ var swiper = new Swiper('.swiper-container', {
     },
     speed: 1000
   });
+
+  var swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
