@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* 초기화 */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic+Coding&family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic+Coding&family=Patrick+Hand&family=Source+Sans+Pro&display=swap');
+* {
+    margin: 0; padding: 0;
+}
+a { text-decoration: none !important; }
+img { border: 0; }
+ul { list-style: none; }
+
+body{
+    margin: 0;
+    font-family: 'PT Sans Narrow';
+}
+
+html{font-size: 20px}
+body{
+    font-size: 1rem;
+    background-color: rgb(238, 231, 207);
+}
+/* 헤더 꾸미기 */
+.header {
+    position: fixed;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    width: 1890px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FAF0BF;
+}
+
+.icon_img a{
+    position: absolute;
+    left: 250px;
+    top: -46px;
+
+}
+
+.main_text a{
+    position: absolute;
+    width: 239px;
+    height: 68px;
+    left: 369px;
+    top: 20px;
+}
+
+.header_menu2 a
+
+
+
+header > div {
+    width: 54.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+header > div:after {content:""; display: block; clear: both;}
+header > div h1 {
+    float: left;
+    padding: 22px 60px 24px;
+}
+
+header > div nav{
+    float: right;
+    padding: 20.4rem 0 0 0;
+}
+
+header > div .header_menu1 {
+    position: absolute;
+    right: 550px;
+    top: 0;
+    padding: 1.6rem 0 8rem 20rem;
+}
+header > div nav > ul >li{
+    float: left;
+
+}
+header > div nav > ul >li > a{
+    font-size: 1.0rem;
+    color: rgb(82, 62, 37);
+    display: block;
+    padding:0 2.25rem 0; height: 2.6rem;
+    font-family: 'Patrick Hand', cursive;
+
+}
+header > div .header_menu1 li a{
+    border:1px solid transparent; 
+     -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  }
+  
+  header > div .header_menu1 li a:hover {
+    background: rgb(236, 184, 72);
+    border-radius: 50%;
+   
+    
+}
+.header_menu2 li a:hover {
+    
+    color: #f0c758;
+    
+}
+  
+.header_menu2 li a{
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #4d3c2e;
+    float: right;
+    right: 50px;
+    top: 60px;
+    padding:0 1.25rem 0;
+    display:inline;
+    border-left: 1px solid #c0c0c0;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.header_menu2:first-child {
+
+    border-left: none;
+
+  }
+/* 푸터 꾸미기   */
+.footer{
+    background-color: #857d6d;  
+    position: absolute;
+    width: 100%;
+    height: 460px;
+    left: 1px;
+    top: 8600px;
+}
+
+.footer_name{
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    left: 25px;
+    bottom: 420px;
+}
+
+.footer_text a{
+    position: absolute;
+    float: left;
+    left: 31px;
+    top: 120px;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.address{
+    position: absolute;
+    float: left;
+    left: 31px;
+    top: 220px;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.sns{
+    position: absolute;
+    float: right;
+    right: 10px;   
+    bottom: 100px;
+}
+
+.select {
+    top: 420px;
+    width: 200px;
+    padding: .8em .5em;
+    font-family: inherit;
+    background: url('arrow.jpg') no-repeat 95% 50%;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
+    
