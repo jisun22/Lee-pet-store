@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>made homepage</title>
     <link rel="stylesheet" href="library/fontawesome-free-5.15.4-web/css/all.css">
-    <link rel="stylesheet" href="library/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="library/bootstrap-5.1.1-dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="library/swiper/swiper.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/common.css">
@@ -14,13 +14,12 @@
 </head>
 <body>
   <!-- 헤더 -->
-
   <header>
     <div class="main_video">
       <video muted autoplay loop preload="auto">
         <source src="video/Dog - 73248.mp4" type="video/mp4">
       </video>
-      <p class="video_text">
+      <p class="typing-txt">
         “ Every Pet<br>
         &nbsp;Deserves<br>
         &nbsp;The Best ”
@@ -30,10 +29,12 @@
       <div class="top_nav">
         <div class="logo">
           <a href="#">
-            <img src="./images/header_logo.png" alt="logo">
+            <img src="./images/LEEPETSTORE.png" alt="logo">
           </a> 
         </div>
         <div class="main_menu">
+          <div class="toggle_btn"><a href="#"><i class="fas fa-bars" style=" color:sandybrown;"></i></a>
+          </div>
           <ul class ="header_menu1"> 
             <li><a href="#">Brand</a></li>
             <li><a href="#">Outdoor</a></li>
@@ -52,28 +53,99 @@
       </div>
     </nav>
   </header>
-  <div class="main_container">
+    <!-- <section id="search_sec"> -->
     <section id="search_sec">
-      <div class="search_background">
-        <img src="./images/search_back.png" alt="검색">
-      </div>
-      <div>
-        검색창
-      </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/paris.jpg" alt="파리"><div>
+            <div class="swiper-slide"><img src="./images/paris2.jpg" alt="파리2"></div>
+          </div>
+          <table class="search_table">
+            <tr>
+              <td class="search_td">
+                <input type="text" placeholder="search"
+                class="search">
+                <a href="#"><i class="fas fa-search"></i>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
     </section>
     <section id="best_sec">
-      <div>Best</div>
+      <div class="best">
+        <img src="images/icon/besticon.png" alt="">
+      </div>
       <div id="slider">
         <!-- Swiper -->
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-          </div>
+            <div class="swiper-slide">
+            <div class= "frame">
+              <img src="images/pet clothes/WINCH-Red-Raincoat.jpg" alt="베스트이미지">
+            </div>
+              <div class="best_text">
+                <p class="best_bold">MILK & PEPPER</p>
+                <br />
+                <p>밀크 앤 페퍼</p>
+                <p>WICH Red Raincoat</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+            <div class= "frame">
+              <img src="images/pet clothes/thumb_big002-7-486x608.jpg" alt="">
+            </div>
+              <div class="best_text">
+                <p class="best_bold">MILK & PEPPER</p>
+                <br />
+                <p>펫 소 시크 Dog leash </p>
+                <p>Royal Blue(로얄 블루)</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+            <div class= "frame">
+              <img src="images/pet clothes/thumb_big_leash_blue.jpg" alt="">
+            </div>
+              <div class="best_text">
+                <p class="best_bold">PET SO CHIC</p>
+                <br />
+                <p>펫 소 시크</p>
+                <p>WICH Red Raincoat</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+            <div class= "frame">
+              <img src="images/pet clothes/BonVoyage.jpg" alt="">
+            </div>
+              <div class="best_text">
+                <p class="best_bold">MILK & PEPPER</p>
+                <br />
+                <p>밀크 앤 페퍼</p>
+                <p>WICH Red Raincoat</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+            <div class= "frame">
+              <img src="images/pet clothes/Shirtthumb002.jpg" alt="">
+            </div>
+              <div class="best_text">
+                <p class="best_bold">MAXBONE</p>
+                <br />
+                <p>맥스본</p>
+                <p>WICH Red Raincoat</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+            <div class= "frame">
+              <img src="images/pet clothes/SANGHA-Raincoatthumb001.jpg" alt="">
+            </div>
+              <div class="best_text">
+                <p class="best_bold">MAXBONE</p>
+                <br />
+                <p>맥스본</p>
+                <p>WICH Red Raincoat</p>
+              </div>
+            </div>
           <!-- Add Arrows -->
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -81,20 +153,84 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="slider_btn">button</div>
+      <div class="best_button">
+        <a href="#"><img src="images/more.png" alt="베스트버튼"></a>
+      </div>
     </section>
     <section id="new_sec">
-      <div>New</div>
+      <div class="best">
+        <img src="images/icon/newicon.png" alt="">
+      </div>
       <div id="slider">
         <!-- Swiper -->
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">
+              <div class="frame">
+                <img src="images/pet clothes/ARTIMON-Hoodythumb001.jpg" alt="">
+              </div>
+              <div class="new_text">
+                  <p>MILK & PEPPER</p>
+                  <br />
+                  <p>밀크 앤 페퍼</p>
+                  <p>WICH Red Raincoat</p>
+              </div>
+              </div>
+            <div class="swiper-slide">
+              <div class="frame">
+                <img src="images/pet clothes/Bandana-thumb002.jpg" alt="">
+              </div>
+              <div class="new_text">
+                  <p>PET SO CHIC</p>
+                  <br />
+                  <p>펫 소 시크</p>
+                  <p>WICH Red Raincoat</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="frame">
+                <img src="images/pet clothes/ccjumper-pink001-486x608.png" alt="">
+              </div>
+              <div class="new_text">
+                  <p>MILK & PEPPER</p>
+                  <br />
+                  <p>밀크 앤 페퍼</p>
+                  <p>WICH Red Raincoat</p>
+              </div>
+              </div>
+            <div class="swiper-slide">
+              <div class="frame">
+                <img src="images/pet clothes/Tiny-dog-collaFrance-World-Cup_thumb001-486x608.jpg" alt="">
+              </div>
+              <div class="new_text">
+                <p>MILK & PEPPER</p>
+                <br />
+                <p>밀크 앤 페퍼</p>
+                <p>WICH Red Raincoat</p>
+              </div>
+              </div>
+            <div class="swiper-slide">
+              <div class="frame">
+                <img src="images/pet clothes/thumb_big_leash_taupe000-486x608.jpg" alt="">
+              </div>
+              <div class="new_text">
+                <p>MILK & PEPPER</p>
+                <br />
+                <p>밀크 앤 페퍼</p>
+                <p>WICH Red Raincoat</p>
+              </div>
+              </div>
+            <div class="swiper-slide">
+              <div class="frame">
+                <img src="images/pet clothes/BELEM-Polo-Shirtthumb001-.jpg" alt="">
+              </div>
+              <div class="new_text">
+                <p>MILK & PEPPER</p>
+                <br />
+                <p>밀크 앤 페퍼</p>
+                <p>WICH Red Raincoat</p>
+              </div>
+              </div>
           </div>
           <!-- Add Arrows -->
           <div class="swiper-button-next"></div>
@@ -103,7 +239,6 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="slider_btn">button</div>
     </section>
     <section id="pet_so_sec">
       <div class="petsoshic">
@@ -122,29 +257,62 @@
       </div>
     </section>
     <section id="review_sec">
-      <div>
+      <div class="review">
+        <img src="images/icon/reviewicon.png" alt="">
       </div>
-      <div></div>
-      <div></div>
+      <div class="review_frame">
+        <div class="frame">
+          <img src="images/pet clothes/ALTAIR-Glossy-Black.jpg" alt="">
+          <p>어머나..이런 하네스가 있다니<br>
+          하네스 하나로 부인같이 만들어주며 보언성까지<br>
+          겸비한 하네스는 처음이네요!<br>
+          이거 하나 입으면 겨울 산책 준비 완료~<br>
+          찍찍이 타입으로 강아지가 편하게 착용할 수 있어<br>
+          더더욱 좋아요</p>
+          <p> ze****</p>
+          <hr>
+          <p>icon</p>
+        </div>
+        <div class="frame">
+          <img src="images/pet clothes/SANGHA-Raincoatthumb001.jpg" alt="">
+          <p>여름철에 유용하게 잘 입혔네요~제가 레오파드+핑크매니아라서<br>
+          너무 제 취향이라 질라버렸더랬죠^^ 모자에 달린 금속 채피와<br>
+          단추도 로즈골드 색이라 너무 사랑스럽고 이뻐요~</p>
+          <p> sd*****</p>
+          <hr>
+        <p>icon</p>
+        </div>
+        <div class="frame">
+          <img src="images/pet clothes/NORMAN-Blue-Windcoat-thumb002.jpg" alt="">
+          <p>강아지용 바람막이가 있다니~^^~너무 깜찍하기도 하고 디자인도<br>
+          이뻐서 주문했습니다. 패치에 아이템 캡틴이라고 쓴 것도 귀여워요<br>
+          ㅋㅋㅋ산책때 마다 잘 입혀서 데리고 나가고 있습니다.ㅋㅋ</p>
+          <p>ba****</p>
+          <hr>
+          <p>icon</p>
+        </div>
+      </div>
+      <div class="review_button">
+        <a href="#"><img src="images/more2.png" alt="리뷰버튼"></a>
+      </div>
     </section>
     <section id="event_sec">
-      <div>Event</div>
+      <div class="event"><img src="images/icon/eventicon.png" alt="이벤트"></div>
       <div id="event_slider">
         <!-- Swiper -->
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide"><img src="./images/kakao_event.jpg" alt="카카오이벤트"><div>
+            <div class="swiper-slide"><img src="./images/review_event.jpg" alt="리뷰이벤트"></div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
-      <div></div>
     </section>
-  </div>
-
 
 <!-- 푸터 안내사항 및 정보 -->
-<!-- <footer class="footer">
-  <nav class="footer_block">
+<section id="footer">
     <div class="footer_name">
     <img src="images/footer_name.png" alt="">
     </div>
@@ -156,17 +324,18 @@
         <li><a href="#a">개인정보처리방침</a></li>
       </div>
       <div class="address">
-        <p>인천 송도 아트센터 대로 퍼스트타워 20층 </p>
+        <p>인천 송도 아트센터 대로 퍼스트타워 20층 </p><br>
         <p>대표이사: 이지영 | 사업자등록번호: 209-01-231322 </p>
       </div>
       <div class="sns">
-        <li><a href="#a"><img src="./images/icon/facebook.png" alt=""></a></li>
-        <li><a href="#a"><img src="./images/icon/instagram.png" alt=""></a></li>
-        <li><a href="#a"><img src="./images/icon/kakao-talk.png" alt=""></a></li>
-        <li><a href="#a"><img src="./images/icon/youtube.png" alt=""></a></li>
+        <a href="#a"><img src="./images/icon/facebook.png" alt=""></a>
+        <a href="#a"><img src="./images/icon/instagram.png" alt=""></a>
+        <a href="#a"><img src="./images/icon/kakao-talk.png" alt=""></a>
+        <a href="#a"><img src="./images/icon/youtube.png" alt=""></a>
       </div>
       <div class="help">
         <p>Help Us  1400-0000</p><br>
+        <br>
         <p>평일: 09:00 - 17:30</p>
       </div>
       <div class="select">
@@ -177,8 +346,14 @@
           <option>Japanese</option>
         </select>
       </div>
-  </nav>
-</footer> -->
+      <div class="mobile_footer">
+        <a href="#a"><i class="fas fa-user"></i></a>
+        <a href="#a"><i class="fas fa-globe"></i></a>
+        <a href="#a"><img src="./images/footericon.png" alt=""></a>
+        <a href="#a"><i class="fas fa-heart"></i></a>
+        <a href="#a"><i class="fas fa-shopping-basket"></i></a>
+      </div>
+</section>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="library/swiper/swiper.min.js"></script>
 <script src="js/wow.min.js"></script>

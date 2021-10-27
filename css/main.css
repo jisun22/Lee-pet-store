@@ -5,6 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic+Coding&family=Patrick+Hand&display=swap');
 
+
+/* 비디오 */
+
 header > .main_video {
     position: relative;
     top: 0;
@@ -14,41 +17,95 @@ header > .main_video > video {
     width: 100%;
 }
 
-header > .main_video > .video_text{
+header > .main_video > .typing-txt {  
+    display: inline-block; 
+    animation-name: cursor; 
+    animation-duration: 0.3s; 
+    animation-iteration-count: infinite;
     position: absolute;
-    float: right;
     right: 40px;
-    top: 650px;
+    top: 450px;
     font-family: 'Patrick Hand', cursive;
     color: #FFFFFF;
     font-size: 144px;
-    line-height: 130px;
-}
+    line-height: 130px; 
+} 
+@keyframes cursor{ 
+    0%{border-right: 1px solid #fff} 
+    50%{border-right: 1px solid #000} 
+    100%{border-right: 1px solid #fff} 
+        }
 
 /* 검색창 */
-
-
-#search_sec {
-    height: 700px;
+.search_table{
+    position: absolute;
+    background: #FFFFFF;
+    border: 6px solid #D88E20;
+    width: 600px;
+    height: 80px;
     text-align: center;
-    background: #e0da95;
+    background: #ffffff;
+    opacity: 60;
 }
 
-#search_sec >.search_background > img {
-    width: 1600px;
+.search_container tr td input{
+    width: 763px;
+    height: 79px;
+}
+
+#search_sec .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+#search_sec .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    /* display: flex; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+/* best */
+#best_sec .best_text .best_bold{
+    font-size: 30px;
+}
+
+#best_sec .best_text{
+    position: absolute;
+    width: 331px;
+}
+
+#best_sec .best_text p {
+    float: left;
+    left: 30px;
+    line-height: 57px;
+}
+
+#best_sec .best{
+    position: relative;
+    float: right;
+    right: 0;
 }
 
 /* 베스트 슬라이더 */
 #best_sec .swiper-container {
     width: 100%;
-    height: 500px;
-    background: coral;
+    height: 700px;
+    background: rgb(248, 225, 123);
 }
 
 #best_sec .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: coral;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -65,17 +122,53 @@ header > .main_video > .video_text{
     align-items: center;
 }
 
+#best_sec .swiper-container img{
+    position: absolute;
+    width: 350px;
+    height: 438px;
+    top: 10px;
+}
+
+#best_sec .swiper-container .best_text{
+    position: absolute;
+    bottom: 30px;
+}
+
+.best_button a img{
+    position: relative;
+    text-align: center;
+}
+
+/* new */
+
+#new_sec .new_line {
+    position: relative;
+    float: left;
+    width: 231px;
+    top: 43px;
+    height: 0px;  
+    left: -90px;
+    border: 1px solid #000000;
+}
+
+#new_sec .new{
+    position: relative;
+    float: left;
+    right: 0;
+}
+
+
+
 /* new 슬라이더 */
 #new_sec .swiper-container {
     width: 100%;
-    height: 500px;
-    background: rgb(181, 218, 134);
+    height: 700px;
+    background: rgb(245, 236, 111);
 }
 
 #new_sec .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: rgb(181, 247, 137);
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -90,6 +183,18 @@ header > .main_video > .video_text{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+}
+
+#new_sec .swiper-container img{
+    position: absolute;
+    width: 350px;
+    height: 438px;
+    top: 10px;
+}
+
+#new_sec .swiper-container .new_text{
+    position: absolute;
+    bottom: 30px;
 }
 
 #pet_so_sec {
@@ -114,14 +219,56 @@ header > .main_video > .video_text{
     /* width: 100%; */
 }
 
-#event_slider .swiper-container {
+#pet_sp_sec .petsoshic_ex{
+    font-size: 20px;
+}
+
+/* 리뷰 */
+#review_sec .review{
+    position: relative;
+    float: right;
+    right: 0;
+}
+
+.review_frame {
+    overflow: hidden;
+    background-color: rgb(248, 240, 169);
+    width: 100%;
+    height: 900px;
+}
+
+.review_frame > .frame{
+    position: relative;
+    float: left;
+    left: 200px;
+    font-size: 15px;
+    text-align: center;
+    padding: 50px 50px 50px 50px;
+}
+
+.review_frame img {
+    resize: both;  
+    margin-left: 50px;
+    max-width: 400px; 
+    height: 500px; 
+    margin: 5px 0;
+}
+
+#review_sec .review_button{
+    position: relative;
+    text-align: center;
+    bottom: 150px;
+}
+
+
+/* 이벤트 */
+
+#event_sec .swiper-container {
     width: 100%;
     height: 100%;
 }
-#event_slider .swiper-slide {
+#event_sec .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    background: #fff;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -136,4 +283,27 @@ header > .main_video > .video_text{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+}
+
+@media screen and (max-width: 768px) and (max-width:959px) { 
+    header .main_menu1{
+        flex-direction: column;
+    }
+
+    header .bottom_nav .header_menu2{
+        flex-direction: column;
+    }
+    
+    header > .main_video > video {
+        width: 100%;
+    }
+
+    header > .main_video > .typing-txt {
+        display: inline-block;
+        font-size: 44px;
+    }
+
+    .search_table{
+        width: 100%;
+    }
 }
