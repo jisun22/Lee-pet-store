@@ -496,20 +496,12 @@ header > .main_video > .typing-txt {
         height: 64px;  
     }
 
-    #pet_so_sec .petsoshic_ex .chic{
-        position: absolute;
-        width: 175px;
-        height: 64px;  
+    #pet_sp_sec .petsoshic_ex{
+        display: none;
     }
 
-    #pet_so_sec .petsoshic_ex .ribon{
-        position: absolute;
-        width: 50px;
-        height: 64px;  
+    #pet_sp_sec .petsoshic_ex p{
+        display: none;
     }
-    #pet_so_sec .petsoshic_ex .explain{
-        position: absolute;
-        width: 887px;
-        height: 255px; 
-    }
+    
 }
