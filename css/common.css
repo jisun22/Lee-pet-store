@@ -1,4 +1,4 @@
-@charset "UTF-8";
+                                               @charset "UTF-8";
 /* 초기화 */
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
@@ -60,7 +60,7 @@ header > .header {
     position: absolute;
     float: left;
     left: 50px;
-    width: 150px;
+    width: 200px;
     top: 10px;
 }
 
@@ -70,38 +70,53 @@ header > .header {
 
 .header ul > li {
     float: left;
-    margin-right: 10px;
-    padding: 0 20px 0 0;
+    left: 20px;
+    padding: 0 30px 0 0;
 }
 
 .header_menu2{
     font-size: 15px;
+    top:20px;
+}
+
+.header_menu2 li a:hover{
+    color: #f0c436;
 }
 
 .header_menu1{
-    font-size: 20px;
+    font-size: 18px;
+    padding: 20px 20px 0px 0;
+}
+
+.header_menu1 li {
+    position: relative;
+    left: 90px;
 }
 
 
 .header .main_menu .header_menu1 li a:hover{
-    background-color: aliceblue;
-    border-radius: 50%;
-    opacity: 60%;
-}
-
-
-header:after {
     display:block;
-    width:100%;
-    border-bottom:1px solid rgb(247, 240, 240);
-    content:"";
+    content: '';
+    border-bottom: solid 3px #f0c436;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    
 }
 
-.toggle_btn{
-    display: none;
+.header .main_menu .header_menu1 li a:hover:after { transform: scaleX(1); }
+
+.header .main_menu .header_menu1 li a.fromRight:after{ transform-origin:100% 50%; }
+.header .main_menu .header_menu1 li a.fromLeft:after{  transform-origin:  0% 50%; }
+
+
+.toggle_btn {
     position: absolute;
-    right: 32px;
-    font-size: 24px;
+    display: none;
+}
+
+.menu1_btn a{
+    position: absolute;
+    display: none;  
 }
 
 .down {
@@ -110,7 +125,7 @@ header:after {
     -webkit-transition-timing-function:ease;
     transition-duration:0.4s;
     transition-timing-function:ease;
-  }
+}
 
 /* 푸터 꾸미기   */
 
@@ -189,6 +204,11 @@ header:after {
         width: 150px;
     } 
 
+    .menu1_btn a{
+        position: absolute;
+        display: none;  
+    }
+
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -217,20 +237,24 @@ header:after {
         float: right;
     }
     
+    .menu1_btn a{
+        position: absolute;
+        display: none;  
+    }
 
 }
 
 /* 모바일 가로, 모바일 세로 (해상도 ~ 767px)*/
 @media all and (max-width:767px) {
-    .header_menu1 a{
-            display: none;
-            float: none;
-        }
+    .header_menu1{
+        display: none;
+    }
+        
     .header_menu2 a{
             display: none;
             float: none;
-            flex-direction: column;
         }
+
     .header .top_nav .logo img{
             position: absolute;
             float: left;
@@ -241,36 +265,30 @@ header:after {
             height: 100px;
         }
         
-    .header {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 8px 24px;
-        }
         
-    .header_menu {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-        
-    .header_menu li {
-            width: 100%;
-            text-align: center;
+    .header_menu1 li {
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
         }
 
     .toggle_btn{
-            position: absolute;
-            float: right;
-            right: 10px;
-            top: 30px;
-            
+        position: absolute;
+        right: 30px;
         }
+
+    .main_menu .menu1_btn a i{
+        position: absolute;
+        display: none;
+    }
         
     .header_menu.active,
     .header_icons.active {
-            display: flex;
+        display: flex;
     }
+
+/* 푸터 */
 
     #footer{
         width: 100%;
@@ -301,20 +319,20 @@ header:after {
     }
 
     #footer .mobile_footer a i{
-        position: absolute;
         text-align: center;
         right: 2px;
-        font-size: 5px;
-        padding: 10px 10px 0px 20px;
+        font-size: 20px;
+        padding: 10px 40px 0px 20px;
     }
 
     #footer .mobile_footer a i:hover{
-        background: rgb(223, 238, 138);
-        border-radius: 50%;
-        opacity: 60%;
+        color: rgb(149, 223, 66);
     }
 
     #footer .mobile_footer img{ 
+        width: 50px;
         position: relative;
+        bottom: -20px;
     }
 }
+

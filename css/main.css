@@ -96,6 +96,11 @@ header > .main_video > .typing-txt {
     right: 0;
 }
 
+#best_sec .mobile-best{
+    position: absolute;
+    display: none;
+}
+
 /* 베스트 슬라이더 */
 #best_sec .swiper-container {
     width: 100%;
@@ -155,6 +160,11 @@ header > .main_video > .typing-txt {
     position: relative;
     float: left;
     right: 0;
+}
+
+#new_sec .mobile-new{
+    position: absolute;
+    display: none;
 }
 
 
@@ -240,7 +250,7 @@ header > .main_video > .typing-txt {
 .review_frame > .frame{
     position: relative;
     float: left;
-    left: 200px;
+    /* left: 200px; */
     font-size: 15px;
     text-align: center;
     padding: 50px 50px 50px 50px;
@@ -260,6 +270,10 @@ header > .main_video > .typing-txt {
     bottom: 150px;
 }
 
+#review_sec .mobile-review{
+    position: absolute;
+    display: none;
+}
 
 /* 이벤트 */
 
@@ -285,25 +299,217 @@ header > .main_video > .typing-txt {
     align-items: center;
 }
 
-@media screen and (max-width: 768px) and (max-width:959px) { 
-    header .main_menu1{
-        flex-direction: column;
+#event_sec .mobile-event{
+    position: absolute;
+    display: none;
+}
+
+/* PC (해상도 1024px)*/
+
+@media all and (min-width:1024px) and (max-width:1480px) {
+    header > .main_video > .typing-txt{
+        position: absolute;
+        right: 40px;
+        top: 120px;
+        font-family: 'Patrick Hand', cursive;
+        color: #FFFFFF;
+        font-size: 90px;
+        line-height: 100px; 
     }
 
-    header .bottom_nav .header_menu2{
-        flex-direction: column;
+    #pet_so_sec > .petsoshic > img {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .review_frame {
+        height: 1700px;
     }
     
-    header > .main_video > video {
-        width: 100%;
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    header > .main_video > .typing-txt{
+        position: absolute;
+        top: 140px;
+        font-size: 70px;
+        right: 40px;
+        font-family: 'Patrick Hand', cursive;
+        color: #FFFFFF;
+        line-height: 80px;
     }
 
-    header > .main_video > .typing-txt {
-        display: inline-block;
-        font-size: 44px;
+    #pet_so_sec > .petsoshic > img {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #pet_so_sec .petsoshic_ex{
+        display: none;
+    }
+
+    .review_frame img {
+        position: relative;
+        resize: both;  
+        max-width: 240px; 
+        height: 300px; 
+        margin: 5px 0;
+    }
+    
+    #review_sec .review_button{
+        position: absolute;
+        width: 30px;
+        text-align: center;
+        bottom: 50px;
+    }
+    
+    .review_frame {
+        height: 1700px;
+    }
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 ~ 767px)*/
+@media all and (max-width:767px) {
+    .main_video video{
+        position: relative;
+        top: 90px
+    }
+    
+    header > .main_video > .typing-txt{
+        position:absolute;
+        top: 150px;
+        font-size: 30px;
+        right: 40px;
+        font-family: 'Patrick Hand', cursive;
+        color: #FFFFFF;
+        line-height: 30px; 
     }
 
     .search_table{
+        position: absolute;
+        background: #FFFFFF;
+        border: 6px solid #D88E20;
+        width: 400px;
+        height: 70px;
+        text-align: center;
+        background: #ffffff;
+        opacity: 60;
+    }
+    
+    .search_container tr td input{
+        width: 400px;
+        height: 50px;
+    }
+
+    #best_sec .best{
+        position: absolute;
+        display: none;
+    }
+    
+    #best_sec .mobile-best{
+        text-align: center;
         width: 100%;
+    }
+
+    #new_sec .new{
+        position: absolute;
+        display: none;
+    }
+    
+    #new_sec .mobile-new{
+        text-align: center;
+        width: 100%;
+    }
+
+
+    #pet_so_sec > .petsoshic > img {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #pet_so_sec > .petsoshic_ex > .explain {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #pet_sp_sec .petsoshic_ex{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .review_frame > .frame{
+        position: relative;
+        width: 100%;
+        padding: 50px 50px 50px 50px;
+    }
+    
+    .review_frame img {
+        position: relative; 
+        margin-left: 50px;
+        width: 240px;
+        height: 300px;
+        padding: 10px 10px 10px 10px; 
+    }
+    
+    #review_sec .review_button{
+        bottom: 50px;
+        width: 100%;
+    }
+
+    #review_sec .review{
+        position: absolute;
+        display: none;
+    }
+    
+    .review_frame {
+        height: 1700px;
+        position: relative;
+        left: 0;
+    }
+
+    #review_sec .mobile-review{
+        position: absolute;
+        text-align: center;
+        width: 100%;
+    }
+
+    #event_sec .event{
+        position: absolute;
+        display: none;
+    }
+    
+    #event_sec .mobile-event{
+        position: absolute; 
+        text-align: center;
+        width: 100%;
+    }
+
+    #pet_so_sec .petsoshic_ex .pet{
+        position: absolute;
+        width: 175px;
+        height: 64px;  
+    }
+
+    #pet_so_sec .petsoshic_ex .chic{
+        position: absolute;
+        width: 175px;
+        height: 64px;  
+    }
+
+    #pet_so_sec .petsoshic_ex .ribon{
+        position: absolute;
+        width: 50px;
+        height: 64px;  
+    }
+    #pet_so_sec .petsoshic_ex .explain{
+        position: absolute;
+        width: 887px;
+        height: 255px; 
     }
 }
