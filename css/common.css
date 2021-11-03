@@ -132,7 +132,7 @@ header > .header {
 #footer{
     position: relative;
     background-color: rgb(148, 140, 140);
-    height: 300px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -146,7 +146,7 @@ header > .header {
     position: relative;
     float: left;
     padding: 90px 20px 20px 0;
-    left: 10px;
+    left: 45px;
     color: white;
     font-size: 20px;
 }
@@ -154,10 +154,11 @@ header > .header {
     color: black;
 }
 
-#footer div address{
+#footer .address{
     position: absolute;
     float: left;
     left: 45px;
+    bottom: 60px;
     color: white;
     font-size: 20px;
     
@@ -175,10 +176,11 @@ header > .header {
     font-size: 16px;
 }
 
-#footer .sns li a{
+#footer .sns{
     position: absolute;
     float: right;
-    right: 5px;
+    right: px;
+    bottom: 10px;
 }
 
 #footer .sns li a:hover{
@@ -192,6 +194,15 @@ header > .header {
     color: white;
 }
 
+#footer .mobile_footer a i{
+    position: absolute;
+    display: none;
+}
+
+#footer .mobile_footer img{ 
+    position: absolute;
+    display: none;
+}
 
 /* PC (해상도 1024px)*/
 
