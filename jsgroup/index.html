@@ -13,19 +13,6 @@
 </head>
 <body>
 <header id="header">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="./images/header-screen.jpg" alt="헤더슬라이드">
-            </div>
-            <div class="swiper-slide">
-                <img src="./images/header-screen2.jpg" alt="헤더슬라이드2">
-            </div>
-            <div class="swiper-slide">
-                <img src="./images/header-screen3.jpg" alt="헤더슬라이드3">
-            </div>
-        </div>
-    </div>
     <nav class="header-nav">
         <div class="header-logo">
             <a href="#">
@@ -43,42 +30,72 @@
         </ul>
         </div>
     </nav>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/header-screen.jpg" alt="헤더슬라이드">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/header-screen2.jpg" alt="헤더슬라이드2">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/header-screen3.jpg" alt="헤더슬라이드3">
+            </div>
+        </div>
+    </div>  
 </header>
 <section id="companies">
     <div class="companies-text">
         <p>Companies</p>
     </div>
-    <div class="wide">
-        <img src="./images/wide.jpeg" alt="와이드">
-        <p>함께, 멀리</p>
-        <p>JS WIDE</p>
-    </div>
-    <div class="rise">
-        <img src="./images/rise.jpeg" alt="라이스">
-        <p>세상과 함께 만드는 행복</p>
-        <p>JS RISE</p>
-    </div>
-    <div class="media">
-        <img src="./images/media.jpeg" alt="매디아">
-        <p>일상을 밝히는 콘텐츠</p>
-        <p>JS MEDIA</p>
-    </div>
-    <div class="tv">
-        <img src="./images/tv.jpeg" alt="티비">
-        <p>당신이 선택한 따듯한 시선</p>
-        <p>JS TV</p>
-    </div>
-    <div class="park">
-        <img src="./images/park.jpeg" alt="파크">
-        <p>삶에 선율을 더하다</p>
-        <p>JS PARK</p>
-    </div>
+    <div class="companies-frame">
+        <div class="companies-img wide">
+            <div class="frame-txt">
+            <p>함께, 멀리</p>
+            </div>
+            <div class="font">
+            <p>JS WIDE</p>
+            </div>
+        </div>
+        <div class="companies-img rise">
+            <div class="frame-txt">
+            <p>세상과 함께 만드는 행복</p>
+            </div>
+            <div class="font">
+            <p>JS RISE</p>
+            </div>
+        </div>
+        <div class="companies-img media">
+            <div class="frame-txt">
+            <p>일상을 밝히는 콘텐츠</p>
+            </div>
+            <div class="font">
+            <p>JS MEDIA</p>
+            </div>
+        </div>
+        <div class="companies-img tv">
+            <div class="frame-txt">
+            <p>당신이 선택한 따듯한 시선</p>
+            </div>
+            <div class="font">
+            <p>JS TV</p>
+            </div>
+        </div>
+        <div class="companies-img park">
+            <div class="frame-txt">
+            <p>삶에 선율을 더하다</p>
+            </div>
+            <div class="font">
+            <p>JS PARK</p>
+            </div>
+        </div>
+    </div>    
 </section>
 <section id="latest-news">
     <div class="news-text">
         <p>Latest News</p>
     </div>
-    <div>
+    <div class="news-txt">
         <ul class ="news-menu"> 
             <li><a href="#">All</a></li>
             <li>.</li>
@@ -93,69 +110,64 @@
     </div>
     <div class="news-frame">
         <div>
-            <a href="#"><img src="./images/js-ru.jpg" alt="뉴스"></a>
-            <p>배우 류수영-왕빛나,<br />
-            이엘라이즈와 재계약 체결</p>
+            <div class="news-img">
+                <a href="#"><img src="./images/js-ru.jpg" alt="뉴스"></a>
+                <p>배우 류수영-왕빛나,<br />
+                이엘라이즈와 재계약 체결</p>
+            </div>
+            <div class="news-img">
+                <a href="#"><img src="./images/js-beauty.jpg" alt="뉴스1"></a>
+                <p>뷰티 브랜드 아이빔(IBIM), 신제품<br />
+                    ‘히든 필터 쉐딩’ 랄라블라 전체 1위</p>
+            </div>
+            <div class="news-img">
+                <a href="#"><img src="./images/js-ru2.jpg" alt="뉴스2"></a>
+                <p>
+                    류수영, 2021년 열일 행보 주목!<br />
+                    예능,드라마 이어 광고까지 접수
+                </p>
+            </div>
         </div>
         <div>
-            <a href="#"><img src="./images/js-beauty.jpg" alt="뉴스1"></a>
-            <p>뷰티 브랜드 아이빔(IBIM), 신제품<br />
-                ‘히든 필터 쉐딩’ 랄라블라 전체 1위</p>
-        </div>
-        <div>
-            <a href="#"><img src="./images/js-ru2.jpg" alt="뉴스2"></a>
-            <p>
-                류수영, 2021년 열일 행보 주목! 예능,<br />
-                드라마 이어 광고까지 접수
-            </p>
-        </div>
-        <div>
-            <a href="#"><img src="./images/js-bts.jpg" alt="뉴스3"></a>
-            <p>
-                방탄소년단, 美 '아메리칸 뮤직 어워드'<br />
-                3개 부문 후보
-            </p>
-        </div>
-        <div>
-            <a href="#"><img src="./images/js-lovely.jpg" alt="뉴스4"></a>
-            <p>러블리즈 전속계약 해제</p>
+            <div class="news-img">
+                <a href="#"><img src="./images/js-bts.jpg" alt="뉴스3"></a>
+                <p>
+                    방탄소년단, 美 '아메리칸 뮤직 어워드'<br />
+                    3개 부문 후보
+                </p>
+            </div>
+            <div class="news-img">
+                <a href="#"><img src="./images/js-lovely.jpg" alt="뉴스4"></a>
+                <p>러블리즈 전속계약 해제</p>
+            </div>
         </div>
     </div>
 </section>
 <section id="youtube">
-    <div class="youtube-back">
-        <img src="./images/js.jpg" alt="유튜브배경">
-        <div class="youtube-text">
-            <p>YOUTUBE</p>
-            <p>JS 그룹의 다양한 영상콘텐츠를 즐기세요.</p>
-            <li class="youtube-button">
-                <a href="#"></a>
-                <a href="#"></a>
-            </li>
-        </div>
-        <div class="youtube-slide">
-            <div class="swiper-slide">
-                <div class="header_slide">
-                    <a href="#"><img src="./images/js-ru2.jpg" alt="유튜브"></a>
+    <div class="youtube-text">
+        <p>YOUTUBE</p>
+        <p>JS 그룹의 다양한 영상콘텐츠를 즐기세요.</p>
+        <li class="youtube-button">
+            <a href="#"></a>
+            <a href="#"></a>
+        </li>
+    </div>
+    <div class="youtube-slide">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/tube-ru2.png" alt="유튜브"></a>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="header_slide">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/tube-lee.png" alt="유튜브2"></a>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="header_slide">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/tube-bo.png" alt="유튜브3"></a>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="header_slide">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/tube-jo.png" alt="유튜브4"></a>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="header_slide">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/tube-ru.png" alt="유튜브5"></a>
                 </div>
             </div>
@@ -192,52 +204,54 @@
     </div>
 </section>
 <footer id="footer">
-    <div class="office">
-        <div class="office-name">
-            <p>OFFICE</p>
+    <div class="footer-txt">
+        <div class="office">
+            <div class="office-name">
+                <p>OFFICE</p>
+            </div>
+            <div>
+                <p>서울특별시 마포구 월드컵북로 123 23층(상암동, LJG센터)</p>
+                <p>TEL : 02.123.4567</p>
+                <p>FAX : 070.1200.3401</p>
+            </div>
         </div>
-        <div>
-            <p>서울특별시 마포구 월드컵북로 123 23층(상암동, LJG센터)</p>
-            <p>TEL : 02.123.4567</p>
-            <p>FAX : 070.1200.3401</p>
+        <div class="menu">
+            <div>
+                <p>QUICK MENU</p>
+            </div>
+            <div>
+                <a href="#"><p>찾아오는 길</p></a>
+                <a href="#"><p>문의하기</p></a>
+                <a href="#"><p>개인정보취급방침</p></a>
+            </div>
+        <div class="family">
+            <div>
+                <p>FAMILY</p>
+            </div>
+            <div>
+                <a href="#"><p>JS WIDE</p></a>
+                <a href="#"><p>JS RISE</p></a>
+                <a href="#"><p>JS MEDIA</p></a>
+                <a href="#"><p>JS TV</p></a>
+                <a href="#"><p>JS PARK</p></a>
+            </div>
         </div>
-    </div>
-    <div class="menu">
-        <div>
-            <p>QUICK MENU</p>
+        <div class="career">
+            <div>
+                <p>CAREER</p>
+            </div>
+            <div>
+                <a href="#"><p>사내문화</p></a>
+                <a href="#"><p>채용모집</p></a>
+            </div>
         </div>
-        <div>
-            <a href="#"><p>찾아오는 길</p></a>
-            <a href="#"><p>문의하기</p></a>
-            <a href="#"><p>개인정보취급방침</p></a>
-        </div>
-    <div class="family">
-        <div>
-            <p>FAMILY</p>
-        </div>
-        <div>
-            <a href="#"><p>JS WIDE</p></a>
-            <a href="#"><p>JS RISE</p></a>
-            <a href="#"><p>JS MEDIA</p></a>
-            <a href="#"><p>JS TV</p></a>
-            <a href="#"><p>JS PARK</p></a>
-        </div>
-    </div>
-    <div class="career">
-        <div>
-            <p>CAREER</p>
-        </div>
-        <div>
-            <a href="#"><p>사내문화</p></a>
-            <a href="#"><p>채용모집</p></a>
-        </div>
-    </div>
-    <div class="sns">
-        <div>
-            <a href="#"><img src="images/instagram.png" alt="인스타그램"></a>
-            <a href="#"><img src="images/youtube.png" alt="유튜브"></a>
-            <a href="#"><img src="images/facebook.png" alt="페이스북"></a>
-            <a href="#"><img src="images/kakao-talk.png" alt="카카오톡"></a>
+        <div class="sns">
+            <div>
+                <a href="#"><img src="images/instagram.png" alt="인스타그램"></a>
+                <a href="#"><img src="images/youtube.png" alt="유튜브"></a>
+                <a href="#"><img src="images/facebook.png" alt="페이스북"></a>
+                <a href="#"><img src="images/kakao-talk.png" alt="카카오톡"></a>
+            </div>
         </div>
     </div>
 </footer>

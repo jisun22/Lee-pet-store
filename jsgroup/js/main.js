@@ -19,9 +19,10 @@ $window.on('scroll', function(){ //스크롤시
 
 
   // 헤더 슬라이드
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('#header .swiper-container', {
     pagination: {
-    el: '.swiper-pagination'
+        el: '.swiper-pagination',
+	    loop : true
     },
     mousewheel: false,
     keyboard: false,
@@ -29,5 +30,34 @@ var swiper = new Swiper('.swiper-container', {
     autoplay: {
         delay: 2000,
     },
-    speed: 1000
+    speed: 3000,
+    effect : 'fade'
+    
+});
+
+var swiper = new Swiper('.youtube-slide .swiper-container', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    // effect:'coverflow'
+  });
+
+
+var swiper = new Swiper('#recruit .swiper-container', {
+    pagination: {
+        el: '.swiper-pagination',
+	    loop : true
+    },
+    mousewheel: false,
+    keyboard: false,
+    slidesPerView: 1,
+    autoplay: {
+        delay: 2000,
+    },
+    speed: 4000,
+    
 });
